@@ -1,0 +1,16 @@
+{
+  "name": "playwright-sample-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "npx playwright test",
+    "test:smoke": "npx playwright test --grep '@smoke'",
+    "test:api": "npx playwright test --grep '@api'",
+    "test:regression": "npx playwright test --grep '@regression'",
+    "test:headed": "npx playwright test --headed",
+    "test:ci": "npx playwright test --reporter=list,html"
+  },
+  "devDependencies": {
+    "@playwright/test": "*"
+  }
+}
